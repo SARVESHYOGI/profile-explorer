@@ -8,8 +8,8 @@ import { useProfiles } from "@/lib/use-profiles";
 
 export default function ProfileList() {
   const searchParams = useSearchParams();
-  const searchQuery = searchParams.get("query") || "";
-  const locationFilter = searchParams.get("location") || "";
+  const searchQuery = searchParams.get("query") ?? "";
+  const locationFilter = searchParams.get("location") ?? "";
 
   const { profiles, loading } = useProfiles();
   const [filteredProfiles, setFilteredProfiles] = useState(profiles);

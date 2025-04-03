@@ -6,7 +6,6 @@ import { createContext, useContext, useState, useEffect, useRef } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
-// Use a dummy key for demonstration purposes
 const MAPBOX_TOKEN = "pk.dummy.mapbox.token.for.demonstration";
 
 type MapContextType = {

@@ -59,7 +59,7 @@ interface ProfileFormProps {
 
 export function ProfileForm({ profileId }: ProfileFormProps) {
   const router = useRouter();
-  const { profile, loading: profileLoading } = useProfile(profileId || "");
+  const { profile, loading: profileLoading } = useProfile(profileId ?? "");
   const { createProfile, updateProfile } = useProfiles();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -87,17 +87,17 @@ export function ProfileForm({ profileId }: ProfileFormProps) {
     if (profile && !profileLoading) {
       form.reset({
         name: profile.name,
-        avatar: profile.avatar || "",
+        avatar: profile.avatar ?? "",
         description: profile.description,
-        profession: profile.profession || "",
-        email: profile.email || "",
-        phone: profile.phone || "",
-        website: profile.website || "",
-        interests: profile.interests?.join(", ") || "",
-        street: profile.location.street || "",
+        profession: profile.profession ?? "",
+        email: profile.email ?? "",
+        phone: profile.phone ?? "",
+        website: profile.website ?? "",
+        interests: profile.interests?.join(", ") ?? "",
+        street: profile.location.street ?? "",
         city: profile.location.city,
         country: profile.location.country,
-        postalCode: profile.location.postalCode || "",
+        postalCode: profile.location.postalCode ?? "",
         longitude: profile.location.coordinates.longitude,
         latitude: profile.location.coordinates.latitude,
       });
@@ -110,12 +110,12 @@ export function ProfileForm({ profileId }: ProfileFormProps) {
     try {
       const profileData = {
         name: data.name,
-        avatar: data.avatar || undefined,
+        avatar: data.avatar ?? undefined,
         description: data.description,
-        profession: data.profession || undefined,
-        email: data.email || undefined,
-        phone: data.phone || undefined,
-        website: data.website || undefined,
+        profession: data.profession ?? undefined,
+        email: data.email ?? undefined,
+        phone: data.phone ?? undefined,
+        website: data.website ?? undefined,
         interests: data.interests
           ? data.interests.split(",").map((i) => i.trim())
           : undefined,
@@ -123,7 +123,7 @@ export function ProfileForm({ profileId }: ProfileFormProps) {
           street: data.street,
           city: data.city,
           country: data.country,
-          postalCode: data.postalCode || undefined,
+          postalCode: data.postalCode ?? undefined,
           coordinates: {
             longitude: data.longitude,
             latitude: data.latitude,

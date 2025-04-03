@@ -12,8 +12,8 @@ export function SearchFilters() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  const [query, setQuery] = useState(searchParams.get("query") || "");
-  const [location, setLocation] = useState(searchParams.get("location") || "");
+  const [query, setQuery] = useState(searchParams.get("query") ?? "");
+  const [location, setLocation] = useState(searchParams.get("location") ?? "");
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
