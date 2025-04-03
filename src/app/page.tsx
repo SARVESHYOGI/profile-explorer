@@ -38,6 +38,7 @@ export default function HomePage() {
                     id="map-container"
                     className="h-full w-full rounded-b-lg overflow-hidden"
                   >
+                    {" "}
                     {/* Map will be rendered here by the MapView component */}
                   </div>
                 </Suspense>

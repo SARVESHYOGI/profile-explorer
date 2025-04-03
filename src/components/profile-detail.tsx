@@ -7,10 +7,10 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { useProfile } from "@/lib/use-profiles";
 
 interface ProfileDetailProps {
-  id: string;
+  readonly id: string;
 }
 
-export function ProfileDetail({ id }: ProfileDetailProps) {
+export function ProfileDetail({ id }: Readonly<ProfileDetailProps>) {
   const { profile, loading } = useProfile(id);
 
   if (loading || !profile) {

@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react"
 import type { Profile } from "@/lib/types"
 
-// Mock data for demonstration
 const mockProfiles: Profile[] = [
   {
     id: "1",
@@ -118,10 +117,8 @@ const mockProfiles: Profile[] = [
   },
 ]
 
-// In a real application, this would be replaced with actual API calls
 const STORAGE_KEY = "profile-explorer-data"
 
-// Helper to initialize local storage with mock data if empty
 const initializeStorage = () => {
   if (typeof window === "undefined") return
 
@@ -198,7 +195,6 @@ export function useProfile(id: string) {
 
     initializeStorage()
 
-    // Simulate API fetch for a single profile
     const fetchProfile = () => {
       setLoading(true)
       try {

@@ -6,7 +6,10 @@ import { createContext, useContext, useState, useEffect, useRef } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
-const MAPBOX_TOKEN = "pk.dummy.mapbox.token.for.demonstration";
+const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+if (!MAPBOX_TOKEN) {
+  throw new Error("Missing Mapbox token in environment variables.");
+}
 
 type MapContextType = {
   map: mapboxgl.Map | null;
