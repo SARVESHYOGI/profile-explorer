@@ -1,0 +1,344 @@
+{
+  "events": [
+    {
+      "id": "e101",
+      "name": "Bollywood Night",
+      "start": "2025-11-15T19:00:00.000Z",
+      "end": "2025-11-15T23:00:00.000Z",
+      "venue": "NSCI Dome, Mumbai",
+      "salesStart": "2025-10-01T10:00:00.000Z",
+      "salesEnd": "2025-11-14T23:59:59.000Z",
+      "status": "PUBLISHED",
+      "ticketTypes": [
+        {
+          "id": "t101",
+          "name": "General",
+          "price": 1500,
+          "totalAvailable": 500
+        },
+        {
+          "id": "t102",
+          "name": "VIP",
+          "price": 5000,
+          "totalAvailable": 100
+        }
+      ]
+    },
+    {
+      "id": "e102",
+      "name": "Classical Music Evening",
+      "start": "2025-12-05T18:00:00.000Z",
+      "end": "2025-12-05T21:00:00.000Z",
+      "venue": "Chowdiah Memorial Hall, Bengaluru",
+      "salesStart": "2025-11-01T09:00:00.000Z",
+      "salesEnd": "2025-12-04T23:59:59.000Z",
+      "status": "PUBLISHED",
+      "ticketTypes": [
+        {
+          "name": "Balcony",
+          "price": 800,
+          "description": "Balcony seating",
+          "totalAvailable": 200
+        },
+        {
+          "name": "Front Row",
+          "price": 2000,
+          "description": "Front row seating",
+          "totalAvailable": 50
+        }
+      ]
+    },
+    {
+      "id": "e103",
+      "name": "Startup Expo Delhi",
+      "start": "2025-09-20T10:00:00.000Z",
+      "end": "2025-09-20T18:00:00.000Z",
+      "venue": "Pragati Maidan, New Delhi",
+      "salesStart": "2025-08-10T08:00:00.000Z",
+      "salesEnd": "2025-09-19T23:59:59.000Z",
+      "status": "PUBLISHED",
+      "ticketTypes": [
+        {
+          "name": "Visitor Pass",
+          "price": 500,
+          "description": "Access to all stalls",
+          "totalAvailable": 1000
+        }
+      ]
+    },
+    {
+      "id": "e104",
+      "name": "Mystery Garba Night",
+      "venue": "GMDC Ground, Ahmedabad",
+      "status": "PUBLISHED",
+      "ticketTypes": [
+        {
+          "name": "Garba Pass",
+          "price": 300,
+          "description": "Entry for Garba",
+          "totalAvailable": 2000
+        }
+      ]
+    },
+    {
+      "id": "e105",
+      "name": "Food Festival Chennai",
+      "start": "2025-10-10T11:00:00.000Z",
+      "end": "2025-10-10T22:00:00.000Z",
+      "venue": "Island Grounds, Chennai",
+      "status": "DRAFT",
+      "ticketTypes": [
+        {
+          "name": "Entry",
+          "price": 100,
+          "description": "General entry",
+          "totalAvailable": 5000
+        }
+      ]
+    },
+    {
+      "id": "e106",
+      "name": "Test Cricket Match",
+      "start": "2025-12-25T09:30:00.000Z",
+      "end": "2025-12-25T17:00:00.000Z",
+      "venue": "Eden Gardens, Kolkata",
+      "salesStart": "2025-12-01T10:00:00.000Z",
+      "salesEnd": "2025-12-24T23:59:59.000Z",
+      "status": "PUBLISHED",
+      "ticketTypes": [
+        {
+          "id": "t201",
+          "name": "Pavilion",
+          "price": 2500,
+          "description": "Pavilion seating",
+          "totalAvailable": 300
+        },
+        {
+          "name": "General Stand",
+          "price": 500,
+          "description": "General seating",
+          "totalAvailable": 2000
+        }
+      ]
+    },
+    {
+      "id": "e107",
+      "name": "Marathon Pune",
+      "start": "2025-11-30T05:00:00.000Z",
+      "end": "2025-11-30T12:00:00.000Z",
+      "venue": "Shivaji Nagar, Pune",
+      "status": "DRAFT",
+      "ticketTypes": []
+    },
+    {
+      "id": "e108",
+      "name": "Comedy Night",
+      "start": "2025-12-18T20:00:00.000Z",
+      "end": "2025-12-18T22:00:00.000Z",
+      "venue": "Kala Academy, Goa",
+      "status": "PUBLISHED",
+      "ticketTypes": [
+        {
+          "name": "Regular",
+          "price": 700,
+          "description": "Regular seat",
+          "totalAvailable": 150
+        }
+      ]
+    },
+    {
+      "id": "e109",
+      "name": "Literature Fest",
+      "start": "2025-10-20T10:00:00.000Z",
+      "end": "2025-10-20T18:00:00.000Z",
+      "venue": "Jaipur Exhibition Centre",
+      "status": "PUBLISHED",
+      "ticketTypes": [
+        {
+          "name": "Day Pass",
+          "price": 300,
+          "description": "Full day access",
+          "totalAvailable": 1000
+        }
+      ]
+    }
+  ],
+  "published-events": [
+    {
+      "id": "e101",
+      "name": "Bollywood Night",
+      "start": "2025-11-15T19:00:00.000Z",
+      "end": "2025-11-15T23:00:00.000Z",
+      "venue": "NSCI Dome, Mumbai",
+      "salesStart": "2025-10-01T10:00:00.000Z",
+      "salesEnd": "2025-11-14T23:59:59.000Z",
+      "status": "PUBLISHED",
+      "ticketTypes": [
+        {
+          "id": "t101",
+          "name": "General",
+          "price": 1500,
+          "totalAvailable": 500,
+          "description": "General admission"
+        },
+        {
+          "id": "t102",
+          "name": "VIP",
+          "price": 5000,
+          "totalAvailable": 100,
+          "description": "VIP seating with meet & greet"
+        }
+      ]
+    },
+    {
+      "id": "e102",
+      "name": "Classical Music Evening",
+      "start": "2025-12-05T18:00:00.000Z",
+      "end": "2025-12-05T21:00:00.000Z",
+      "venue": "Chowdiah Memorial Hall, Bengaluru",
+      "salesStart": "2025-11-01T09:00:00.000Z",
+      "salesEnd": "2025-12-04T23:59:59.000Z",
+      "status": "PUBLISHED",
+      "ticketTypes": [
+        {
+          "name": "Balcony",
+          "price": 800,
+          "description": "Balcony seating",
+          "totalAvailable": 200
+        },
+        {
+          "name": "Front Row",
+          "price": 2000,
+          "description": "Front row seating",
+          "totalAvailable": 50
+        }
+      ]
+    },
+    {
+      "id": "e103",
+      "name": "Startup Expo Delhi",
+      "start": "2025-09-20T10:00:00.000Z",
+      "end": "2025-09-20T18:00:00.000Z",
+      "venue": "Pragati Maidan, New Delhi",
+      "salesStart": "2025-08-10T08:00:00.000Z",
+      "salesEnd": "2025-09-19T23:59:59.000Z",
+      "status": "PUBLISHED",
+      "ticketTypes": [
+        {
+          "name": "Visitor Pass",
+          "price": 500,
+          "description": "Access to all stalls",
+          "totalAvailable": 1000
+        }
+      ]
+    },
+    {
+      "id": "e104",
+      "name": "Mystery Garba Night",
+      "venue": "GMDC Ground, Ahmedabad",
+      "status": "PUBLISHED",
+      "ticketTypes": [
+        {
+          "name": "Garba Pass",
+          "price": 300,
+          "description": "Entry for Garba",
+          "totalAvailable": 2000
+        }
+      ]
+    },
+    {
+      "id": "e105",
+      "name": "Food Festival Chennai",
+      "start": "2025-10-10T11:00:00.000Z",
+      "end": "2025-10-10T22:00:00.000Z",
+      "venue": "Island Grounds, Chennai",
+      "status": "DRAFT",
+      "ticketTypes": [
+        {
+          "name": "Entry",
+          "price": 100,
+          "description": "General entry",
+          "totalAvailable": 5000
+        }
+      ]
+    },
+    {
+      "id": "e106",
+      "name": "Test Cricket Match",
+      "start": "2025-12-25T09:30:00.000Z",
+      "end": "2025-12-25T17:00:00.000Z",
+      "venue": "Eden Gardens, Kolkata",
+      "salesStart": "2025-12-01T10:00:00.000Z",
+      "salesEnd": "2025-12-24T23:59:59.000Z",
+      "status": "PUBLISHED",
+      "ticketTypes": [
+        {
+          "id": "t201",
+          "name": "Pavilion",
+          "price": 2500,
+          "description": "Pavilion seating",
+          "totalAvailable": 300
+        },
+        {
+          "name": "General Stand",
+          "price": 500,
+          "description": "General seating",
+          "totalAvailable": 2000
+        }
+      ]
+    },
+    {
+      "id": "e107",
+      "name": "Marathon Pune",
+      "start": "2025-11-30T05:00:00.000Z",
+      "end": "2025-11-30T12:00:00.000Z",
+      "venue": "Shivaji Nagar, Pune",
+      "status": "DRAFT",
+      "ticketTypes": []
+    },
+    {
+      "id": "e108",
+      "name": "Comedy Night",
+      "start": "2025-12-18T20:00:00.000Z",
+      "end": "2025-12-18T22:00:00.000Z",
+      "venue": "Kala Academy, Goa",
+      "status": "PUBLISHED",
+      "ticketTypes": [
+        {
+          "name": "Regular",
+          "price": 700,
+          "description": "Regular seat",
+          "totalAvailable": 150
+        }
+      ]
+    },
+    {
+      "id": "e109",
+      "name": "Literature Fest",
+      "start": "2025-10-20T10:00:00.000Z",
+      "end": "2025-10-20T18:00:00.000Z",
+      "venue": "Jaipur Exhibition Centre",
+      "status": "PUBLISHED",
+      "ticketTypes": [
+        {
+          "name": "Day Pass",
+          "price": 300,
+          "description": "Full day access",
+          "totalAvailable": 1000
+        }
+      ]
+    }
+  ],
+  "tickets": [
+    {
+      "id": "tkt-001",
+      "status": "PURCHASED",
+      "price": 1500.0,
+      "description": "General admission",
+      "eventName": "Bollywood Night",
+      "eventVenue": "NSCI Dome, Mumbai",
+      "eventStart": "2025-11-15T19:00:00.000Z",
+      "eventEnd": "2025-11-15T23:00:00.000Z"
+    }
+  ]
+}
